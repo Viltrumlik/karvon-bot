@@ -1,5 +1,7 @@
 # Karvonboshi · Караванщик · Caravan Master
 
+![Python: 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white) ![aiogram: 3](https://img.shields.io/badge/aiogram-3-26A5E4?logo=telegram&logoColor=white) ![tests: 242](https://img.shields.io/badge/tests-242-2ea44f) ![languages: uz · ru · en](https://img.shields.io/badge/languages-uz%20%C2%B7%20ru%20%C2%B7%20en-orange) ![license: proprietary](https://img.shields.io/badge/license-proprietary-lightgrey)
+
 A text-only **Silk Road trading roguelite** that you play entirely inside a Telegram chat, with inline buttons.
 You inherit a debt-ridden caravan in 1409 Samarkand and have 100 days to repay a ruthless moneylender by buying
 low, selling high and surviving the roads between seven cities. It is hard on purpose: prices react to every bale
@@ -13,6 +15,28 @@ you trade, the desert drinks your water, unpaid guards desert you, and a bandit 
 - 🌐 **Three languages**: Uzbek (Latin), Russian and English, switchable at any time.
 - 🎚 **Three difficulties** (Normal, Hard, Legendary), Ravshan-ota's tutorial tips, and a `/top` leaderboard.
 - 📱 **Built for Telegram**: one message edited in place, a compact status header, and buttons that survive double taps and stale messages.
+
+## What it looks like
+
+The first city screen on Hard, captured from the console mode. The header shows the day, money, cargo,
+food, morale and debt. In Telegram the buttons are inline buttons under a single message that the bot
+edits in place.
+
+> 📅 1/100 · 💰 400 · 📦 0/40 · 🍞 40 · 😊 70 · 💳 3,000
+>
+> 🧓 **Ravshan-ota:** Your uncle left us four camels, an old man, and a debt of 3,000 tanga. Every ten days it grows, and on day 100 Yusuf takes everything. Buy where a good is made, sell where people miss it. Paper is cheap here; Bukhara and Tashkent are five days away.
+>
+> 🏙 **Samarkand**
+>
+> The blue domes of the Registan glitter; paper mills creak along the Siab canal. Yusuf Sarrof keeps his ledger here.
+>
+> `🏪 Market` `🐫 Stable` `🛡 Guards` `🍞 Provisions` `🏨 Caravanserai` `🫖 Teahouse` `💰 Moneylender` `🗺 Travel` `📜 Status` `📒 Ledger` `☰ Menu`
+
+## Qisqacha · Кратко
+
+**🇺🇿 O'zbekcha.** Telegram chatining o'zida inline tugmalar bilan o'ynaladigan Ipak yo'li savdo o'yini. 1409-yil, Samarqand: amakingizdan qarzga botgan karvon meros qoldi. 100 kun ichida sudxo'r Yusuf Sarrofga qarzni qaytarishingiz kerak: molni arzon joyda oling, qimmat joyda soting, cho'l yo'llarida omon qoling. 7 shahar, 10 xil mol, 28 ta voqea, 8 ta yakun va uch qiyinlik darajasi. Til istalgan payt `/lang` buyrug'i bilan almashtiriladi.
+
+**🇷🇺 Русский.** Торговый роглайт о Великом шёлковом пути, в который играют прямо в чате Telegram, кнопками. Самарканд, 1409 год: вам достался караван в долгах. За 100 дней нужно вернуть долг ростовщику Юсуфу: покупайте дёшево, продавайте дорого и переживите дороги пустыни. 7 городов, 10 товаров, 28 событий, 8 концовок и три уровня сложности. Язык меняется в любой момент командой `/lang`.
 
 ## Story teaser
 
@@ -46,7 +70,7 @@ Commands: `/start` menu · `/status` caravan · `/lang` language · `/restart` n
 ## Install and run
 
 ```bash
-git clone <this repo> karvon-bot && cd karvon-bot
+git clone https://github.com/Viltrumlik/karvon-bot.git && cd karvon-bot
 python3.12 -m venv .venv
 .venv/bin/pip install -r requirements-dev.txt     # or requirements.txt for production only
 ```
@@ -170,6 +194,13 @@ karvon-bot/
 
 The full design (story, characters, world, economy, events, endings and tuned numbers) is in
 [docs/GDD.md](docs/GDD.md).
+
+## More games by Viltrumlik
+
+- [Last Shore](https://github.com/Viltrumlik/last-shore): pixel-art survival city-builder on a drying sea (browser)
+- [Night Express](https://github.com/Viltrumlik/night-express): text-adventure mystery on an overnight train (terminal)
+- [Dispatch 112](https://github.com/Viltrumlik/dispatch-112): real-time emergency-dispatch sim (terminal)
+- [Zero to Mars](https://github.com/Viltrumlik/zero-to-mars): 3D founder life-sim Telegram WebApp
 
 ## License
 
